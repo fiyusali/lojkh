@@ -1,0 +1,146 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fb;
+  color: #222;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.logo span {
+  color: #e53238;
+}
+nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #0073b1;
+}
+.call-btn {
+  padding: 0.4rem 0.8rem;
+  background-color: #e53238;
+  color: white;
+  border-radius: 4px;
+}
+.hero {
+  text-align: center;
+  background-color: #e7f1fb;
+  padding: 3rem 1rem;
+}
+.hero h1 {
+  font-size: 2.2rem;
+}
+.hero h1 span {
+  color: #e53238;
+}
+.hero-call {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #e53238;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.availability {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+.services {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+.cards {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-top: 2rem;
+}
+.card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+  background-color: #f0f0f0;
+  color: #444;
+}
+
+.logo-img {
+  height: 28px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+.cta-footer {
+  background: #0064d2;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.cta-footer .large {
+  background: white;
+  color: #e53238;
+  display: inline-block;
+  margin: 1rem auto;
+  font-size: 1rem;
+}
+.deep-footer {
+  background-color: #0f1d2f;
+  color: #ccc;
+  padding: 2rem 1rem;
+}
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+}
+.footer-logo {
+  height: 30px;
+  margin-bottom: 0.5rem;
+}
+.footer-content div {
+  flex: 1 1 180px;
+}
+.footer-content h4 {
+  color: white;
+  margin-bottom: 0.5rem;
+}
+.disclaimer {
+  text-align: center;
+  font-size: 0.75rem;
+  margin-top: 1rem;
+  color: #888;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav {
+    margin-top: 0.5rem;
+  }
+}
